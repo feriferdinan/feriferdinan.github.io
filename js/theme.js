@@ -1,5 +1,62 @@
-(function($) {
+(function ($) {
 	'use strict';
+	$(".nav a").on("click", function () {
+		$(".nav").find(".active").removeClass("active");
+		$(this).parent().addClass("active");
+	});
+	$(".logo_h").on("click", function () {
+		$(".nav").find(".active").removeClass("active");
+	});
+
+	$('.page-scroll').on('click', function (e) {
+		var tujuan = $(this).attr('href');
+		// tangkap elemen ybs
+		var elementujuan = $(tujuan);
+
+		//pindahkan scrollnya
+		$('html,body').animate({
+			scrollTop: elementujuan.offset().top - 80
+		}, 800, 'easeInOutExpo');
+		e.preventDefault();
+
+	});
+
+	$('.page-scroll-gap').on('click', function (e) {
+		var tujuan = $(this).attr('href');
+		// tangkap elemen ybs
+		var elementujuan = $(tujuan);
+
+		//pindahkan scrollnya
+		$('html,body').animate({
+			scrollTop: elementujuan.offset().top + 50
+		}, 800, 'easeInOutExpo');
+		e.preventDefault();
+
+	});
+
+	//about
+	$(window).on('load', function () {
+	})
+
+	// paralax 
+	$(window).scroll(function () {
+		var wScroll = $(this).scrollTop();
+
+		// about 
+		if (wScroll > $('#about').offset().top - 250) {
+			$('.pKiri').addClass('pMuncul');
+			$('.pKanan').addClass('pMuncul');
+		}
+		// service 
+		if (wScroll > $('.services').offset().top - 250) {
+			$('.services .feature_item').each(function (i) {
+				setTimeout(function () {
+					$('.services .feature_item').eq(i).addClass('muncul');
+				}, 300 * (i + 1));
+			});
+		}
+
+	});
 
 	var nav_offset_top = $('header').height() + 50;
 	/*-------------------------------------------------------------------------------
@@ -9,7 +66,7 @@
 	//* Navbar Fixed
 	function navbarFixed() {
 		if ($('.header_area').length) {
-			$(window).scroll(function() {
+			$(window).scroll(function () {
 				var scroll = $(window).scrollTop();
 				if (scroll >= nav_offset_top) {
 					$('.header_area').addClass('navbar_fixed');
@@ -33,8 +90,8 @@
 	/* ---------------------------------------------
             Isotope js Starts
          --------------------------------------------- */
-	$(window).on('load', function() {
-		$('.portfolio-filter ul li').on('click', function() {
+	$(window).on('load', function () {
+		$('.portfolio-filter ul li').on('click', function () {
 			$('.portfolio-filter ul li').removeClass('active');
 			$(this).addClass('active');
 
