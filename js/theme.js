@@ -1,5 +1,13 @@
 (function ($) {
 	'use strict';
+	//loading
+	$('body').css("overflow", "hidden");
+	$(window).on('load', function () {
+		setTimeout(function () {
+			$('body').css("overflow", "scroll");
+			$('.wrapperLoading').fadeOut('slow');
+		}, 1600)
+	})
 	$(".nav a").on("click", function () {
 		$(".nav").find(".active").removeClass("active");
 		$(this).parent().addClass("active");
@@ -32,9 +40,6 @@
 		e.preventDefault();
 	});
 
-	//about
-	$(window).on('load', function () {
-	})
 
 	// paralax 
 	$(window).scroll(function () {
