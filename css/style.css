@@ -26,6 +26,7 @@ Author E-mail: naimlasker@gmail.com
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 body {
+  margin: 0;
   line-height: 26px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -388,15 +389,15 @@ button:focus {
               display: none; } }
       .home_banner_area .banner_inner .banner_content h1 {
         margin-top: 20px;
-        font-size: 70px;
+        font-size: 44px;
         line-height: 60px;
         margin-bottom: 25px; }
         @media (max-width: 1024px) {
           .home_banner_area .banner_inner .banner_content h1 {
-            font-size: 60px; } }
+            font-size: 40px; } }
         @media (max-width: 767px) {
           .home_banner_area .banner_inner .banner_content h1 {
-            font-size: 50px; } }
+            font-size: 17px; } }
       .home_banner_area .banner_inner .banner_content h5 {
         font-size: 24px;
         margin-bottom: 35px; }
@@ -2902,10 +2903,10 @@ h6 {
 
   .home_banner_area .banner_inner .banner_content h2 br {
     display: none;
-    font-size: 36px; }
+    font-size: 18px; }
 
   .home_banner_area .banner_inner .banner_content h2 {
-    font-size: 36px;
+    font-size: 18px;
     line-height: 45px; } }
 @media (max-width: 991px) {
   /* Main Menu Area css
@@ -3146,8 +3147,8 @@ h6 {
   /* Home Banner Area css
   ============================================================================================ */
   .home_banner_area .banner_inner .banner_content h2 {
-    font-size: 28px;
-    line-height: 38px; }
+    font-size: 18px;
+     }
 
   .home_banner_area {
     min-height: 450px; }
