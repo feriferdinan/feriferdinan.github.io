@@ -18,7 +18,6 @@
 			scrollTop: elementujuan.offset().top - 80
 		}, 800, 'easeInOutExpo');
 		e.preventDefault();
-
 	});
 
 	$('.page-scroll-gap').on('click', function (e) {
@@ -31,7 +30,6 @@
 			scrollTop: elementujuan.offset().top + 50
 		}, 800, 'easeInOutExpo');
 		e.preventDefault();
-
 	});
 
 	//about
