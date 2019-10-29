@@ -3309,3 +3309,26 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.pKiri,.pKanan {
+	opacity: 0;
+	transform: translate(-50px,0) rotate(15deg);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px,0) rotate(15deg);
+}
+.pKiri.pMuncul , .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.services .feature_item {
+	opacity: 0;
+	transform: translate(0,-40px);
+	transition: .5s;
+}
+.services .feature_item.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
