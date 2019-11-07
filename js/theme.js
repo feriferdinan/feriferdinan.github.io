@@ -16,7 +16,6 @@
 	$(".logo_h").on("click", function () {
 		$(".nav").find(".active").removeClass("active");
 	});
-
 	$('.page-scroll').on('click', function (e) {
 		var tujuan = $(this).attr('href');
 		// tangkap elemen ybs
@@ -60,8 +59,7 @@
 			});
 		}
 
-	});
-
+	})
 	var nav_offset_top = $('header').height() + 50;
 	/*-------------------------------------------------------------------------------
 	  Navbar 

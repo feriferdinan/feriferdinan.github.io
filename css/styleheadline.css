@@ -759,7 +759,7 @@ xclip
   right: 0;
   width: 2px;
   height: 100%;
-  background-color: #aebcb9;
+  /* background-color: #aebcb9; */
 }
 .cd-headline.clip b {
   opacity: 0;
