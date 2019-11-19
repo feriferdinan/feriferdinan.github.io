@@ -25,7 +25,17 @@ Author E-mail: naimlasker@gmail.com
 /* Wide Mobile Layout: 480px */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb
+{
+	background-color: #aeaeae;
+}
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   line-height: 26px;
