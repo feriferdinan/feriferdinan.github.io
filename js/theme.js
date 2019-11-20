@@ -4,10 +4,8 @@
 	let title = $('title')
 	$('body').css("overflow", "hidden");
 	$(window).on('load', function () {
-		setTimeout(function () {
-			$('body').css("overflow", "auto");
-			$('.wrapperLoading').fadeOut('slow');
-		}, 1600)
+		$('body').css("overflow", "auto");
+		$('.wrapperLoading').fadeOut('slow');
 	})
 	// check if mobile user
 	window.mobilecheck = function () {
@@ -17,7 +15,9 @@
 	};
 	// change title if mobile browser
 	(window.mobilecheck()) ? title.text('Septian Feri Ferdinan') : title.text('eptian Feri Ferdinan')
+
 	$('.navbar').scrollspy();
+
 	$(".nav a").on("click", function () {
 		$(".nav").find(".active").removeClass("active");
 		$(this).parent().addClass("active");
